@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>登入界面</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <h1>lgogin</h1>
+      <form action="">
+        <input type="text" placeholder="账号">
+        <input type="text" placeholder="密码" />
+        <button><a href="main.html">登入</a></button>
+      </form>
+    </div>
+    <script>
+      //获取login
+      let login = document.querySelector('.login')
+      //把生成放在外面调用
+      //生成span元素
+      let span = document.createElement('span')
+      login.appendChild(span)
+
+      //获取鼠标进入事件
+      login.addEventListener('mouseenter', function(e) {
+        span.style.animation = 'in .5s ease-out forwards'
+        //计算top和feft值
+        let top = e.clientY - e.target.offsetTop
+        let left = e.clientX - e.target.offsetLeft
+        span.style.top = top + 'px'
+        span.style.left = left + 'px'
+      })
+      //获取鼠标退出事件
+      login.addEventListener('mouseleave', function(e) {
+
+        //span使用动画
+        span.style.animation = 'out .5s ease-out forwards'
+
+        let top = e.clientY - e.target.offsetTop
+        let left = e.clientX - e.target.offsetLeft
+        span.style.top = top + 'px'
+        span.style.left = left + 'px'
+      })
+    </script>
+  </body>
+
+
+</html>
