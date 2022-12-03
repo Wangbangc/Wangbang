@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: teal;
+}
+
+.dh {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 100%;
+  background-color: #34495e;
+}
+
+.a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
